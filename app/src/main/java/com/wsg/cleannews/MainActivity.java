@@ -12,5 +12,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
   // 演示一个 现在这个文件更改了  颜色也变了有变化了 颜色也不一样
+    //再试一次
 
 }
