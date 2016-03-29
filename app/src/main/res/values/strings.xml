@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">CleanNews</string>
+
+
+    <!-- 左边页面 -->
+    <string name="photo">图片</string>
+    <string name="video">视频</string>
+    <string name="notification">消息</string>
+    <string name="weather">天气</string>
+    <string name="settings">设置</string>
+    <string name="news">新闻</string>
+
 </resources>

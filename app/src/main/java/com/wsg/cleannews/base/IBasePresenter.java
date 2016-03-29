@@ -6,7 +6,7 @@ package com.wsg.cleannews.base;
  * UpdateUser:
  * UpdateDate:
  */
-public interface BasePresenter {
+public interface IBasePresenter {
 
     void onResume();
 

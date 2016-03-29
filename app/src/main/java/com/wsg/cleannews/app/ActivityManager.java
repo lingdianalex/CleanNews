@@ -21,7 +21,7 @@ public class ActivityManager {
     private ActivityManager() {
     }
 
-    public static ActivityManager getScreenManager() {
+    public static ActivityManager getInstance() {
 /**
  * 此种方案适合单线程,当引入多线程时即线程不安全
  */

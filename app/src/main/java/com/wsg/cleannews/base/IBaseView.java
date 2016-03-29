@@ -6,7 +6,7 @@ package com.wsg.cleannews.base;
  * UpdateUser:
  * UpdateDate:
  */
-public interface BaseView {
+public interface IBaseView {
 
     void toast(String msg);
 
