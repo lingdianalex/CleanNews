@@ -52,6 +52,6 @@ public class BasePresenterImpl<T extends INewsListView, V> implements IBasePrese
 
     @Override
     public void requestSuccess(V data) {
-
+    Logger.i("**********","&&&&&&");
     }
 }

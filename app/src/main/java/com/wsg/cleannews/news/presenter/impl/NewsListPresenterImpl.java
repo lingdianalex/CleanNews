@@ -16,7 +16,7 @@ import java.util.List;
  * UpdateUser:
  * UpdateDate:
  */
-public class NewsListPresenterImpl extends BasePresenterImpl implements INewsListPresenter {
+public class NewsListPresenterImpl extends BasePresenterImpl<INewsListView,List<NeteastNewsSummary>> implements INewsListPresenter {
 
     private String mNewsType;
     private String mNewsId;

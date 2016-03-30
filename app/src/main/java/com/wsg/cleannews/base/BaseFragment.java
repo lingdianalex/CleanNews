@@ -15,10 +15,31 @@ import butterknife.ButterKnife;
  * UpdateUser:
  * UpdateDate:
  */
-public abstract class BaseFragment extends Fragment implements IBaseView {
+public abstract class BaseFragment<T extends IBasePresenter> extends Fragment implements IBaseView {
 
     public static final String TAG = BaseFragment.class.getSimpleName();
     protected View mRootView;
+    // 将代理类通用行为抽出来
+    protected T mPresenter;
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mPresenter != null) {
+            mPresenter.onResume();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mPresenter != null) {
+            mPresenter.onDestroy();
+        }
+//         使用 RefWatcher 监控 Fragment
+//        RefWatcher refWatcher = App.getRefWatcher(getActivity());
+//        refWatcher.watch(this);
+    }
 
 
     @Nullable
