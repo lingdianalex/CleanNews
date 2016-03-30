@@ -4,6 +4,11 @@ import android.os.Bundle;
 
 import com.wsg.cleannews.R;
 import com.wsg.cleannews.base.BaseFragment;
+import com.wsg.cleannews.bean.NeteastNewsSummary;
+import com.wsg.cleannews.common.DataLoadType;
+import com.wsg.cleannews.news.view.INewsListView;
+
+import java.util.List;
 
 /**
  * Created by Wangsg on 16/3/22.
@@ -11,7 +16,7 @@ import com.wsg.cleannews.base.BaseFragment;
  * UpdateUser:
  * UpdateDate:
  */
-public class NewsListFragment extends BaseFragment {
+public class NewsListFragment extends BaseFragment implements INewsListView {
 
 
     @Override
@@ -21,6 +26,12 @@ public class NewsListFragment extends BaseFragment {
 
     @Override
     protected void afterCreate(Bundle savedInstanceState) {
+
+    }
+
+
+    @Override
+    public void updateNewsList(List<NeteastNewsSummary> data, DataLoadType type) {
 
     }
 }
