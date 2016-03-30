@@ -13,4 +13,6 @@ public interface IBaseView {
     void showProgress();
 
     void hideProgress();
+
+
 }
