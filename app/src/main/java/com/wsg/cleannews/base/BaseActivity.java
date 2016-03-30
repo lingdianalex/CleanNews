@@ -20,6 +20,8 @@ import com.orhanobut.logger.Logger;
 import com.wsg.cleannews.BuildConfig;
 import com.wsg.cleannews.app.ActivityManager;
 
+import butterknife.ButterKnife;
+
 /**
  * Created by Wangsg on 16/3/16.
  * Description:  activity 基类
@@ -77,6 +79,7 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
         ActivityManager.getInstance().pushActivity(this);
         Logger.i("创建");
         setContentView(getLayoutId());
+        ButterKnife.bind(this);
 
         /**
          * 严苛模式
@@ -137,6 +140,7 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
 //        }
 
         ActivityManager.getInstance().popActivity(this);
+        ButterKnife.unbind(this);
         Logger.i("销毁");
     }
 

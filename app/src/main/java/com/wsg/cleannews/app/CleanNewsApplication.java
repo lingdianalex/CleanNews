@@ -3,6 +3,8 @@ package com.wsg.cleannews.app;
 import android.app.Application;
 import android.content.Context;
 
+import com.orhanobut.logger.Logger;
+
 /**
  * Created by Wangsg on 16/3/16.
  * Description:  应用application
@@ -23,6 +25,7 @@ public class CleanNewsApplication extends Application {
 //        setupDatabase();
         mApplicationContext = this;
 //        KLog.init(BuildConfig.DEBUG);
+        Logger.init();
     }
 
     // 获取ApplicationContext
